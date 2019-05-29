@@ -1,0 +1,733 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background: url(../ekz/img/header.jpg) no-repeat center top / cover;
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 10% 1fr 4% 2fr 10% 1fr 10%;
+    grid-template-areas: ". logo . . . nav ."
+        " . . . head_text . . ."
+        " . . . head_but . . . ";
+    grid-template-rows: 3fr 1fr 4fr
+}
+
+.logo {
+    grid-area: logo;
+    color: white;
+    padding-top: 10%;
+    font-weight: bold;
+    font-size: 1.2em;
+
+}
+
+header nav {
+    grid-area: nav;
+    padding-top: 10%;
+}
+
+.second_nav {
+    border: 2px solid rgb(235, 233, 236);
+    padding: 6px;
+    border-radius: 15px;
+}
+
+header .head_text {
+    grid-area: head_text;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+
+
+}
+
+.head_but {
+    padding-top: 7%;
+    grid-area: head_but;
+    text-align: center
+}
+
+header .head_text h1 {
+    font-size: 2.7em;
+    text-transform: uppercase;
+    padding-bottom: 6%;
+
+}
+
+header .head_text span {
+    font-size: 1.2em
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.works {
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-areas: ". . text_works . ."
+        " . step1 step2 step3 .";
+}
+
+.works h2 {
+    grid-area: text_works;
+    padding-bottom: 8%;
+    font-size: 1.6em;
+
+}
+
+.step1 {
+    grid-area: step1;
+    position: relative;
+}
+.step1::before {
+    content: 'Sed leo enim, condimentum';
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    left: 15px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px
+}
+.step1::after {
+    content: 'Quisque libero libero, dictum non turpis in, luctus semper lore';
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    left: 15px;
+    color: rgb(150, 150, 150);
+    font-size: 1em;
+    padding-top: 5px
+}
+
+.step2 {
+    grid-area: step2;
+    position: relative;
+}
+.step2::before {
+    content: 'Morbi velit risus';
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    left: 15px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px
+}
+.step2::after {
+    content: 'Nulla venenatis tempor dui in molestie. Nulla quis dictum purus';
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    left: 15px;
+    color: rgb(150, 150, 150);
+    font-size: 1em;
+    padding-top: 5px
+}
+
+.step3 {
+    grid-area: step3;
+    position: relative;
+}
+.step3::before {
+    content: 'Sed leo enim, condimentum';
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    left: 15px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px
+}
+.step3::after {
+    content: 'Quisque libero libero, dictum non turpis in, luctus semper lore';
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    left: 15px;
+    color: rgb(150, 150, 150);
+    font-size: 1em;
+    padding-top: 5px
+}
+
+.partner {
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . text_partner text_partner . . "
+        ". partner1 partner2 partner3 partner4 ."
+        ". . but_partner but_partner . .";
+}
+
+.partner .main_title {
+    grid-area: text_partner;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+.partner img {
+    text-align: center
+}
+
+.partner .title {
+    color: black;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.partner p {
+    padding-top: 7%;
+    text-align: center;
+    color: #666666;
+}
+
+.partner1 {
+    grid-area: partner1;
+    text-align: center;
+}
+
+.partner2 {
+    grid-area: partner2;
+    text-align: center;
+
+}
+
+.partner3 {
+    grid-area: partner3;
+    text-align: center;
+
+}
+
+.partner4 {
+    grid-area: partner4;
+    text-align: center;
+
+}
+
+.but_partner {
+    grid-area: but_partner;
+    padding-top: 12%;
+    text-align: center;
+}
+
+.ideas_photo h2 {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.grid_photo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". img1 img2 img3 ."
+        ". img4 img5 img5 ."
+        ". img6 img6 img7 .";
+    grid-gap: 1%;
+    grid-template-rows: 1fr 1fr 1.1fr;
+}
+
+.img1:after {
+    content: 'Sport and Activity';
+    display: grid;
+    position: absolute;
+    bottom: 45%;
+    right: 10%;
+    color: white;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.img1 {
+    grid-area: img1;
+    position: relative;
+
+
+}
+
+
+
+.img2 {
+    grid-area: img2;
+    position: relative;
+
+}
+
+.img2:after {
+    content: 'Wellnes and Health';
+    display: grid;
+    position: absolute;
+    bottom: 45%;
+    right: 10%;
+    color: white;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.img3 {
+    grid-area: img3;
+    position: relative;
+
+}
+
+.img3:after {
+    content: 'Extreme  Sports\0a and  Expeditions';
+    white-space: pre;
+    display: grid;
+    position: absolute;
+    bottom: 45%;
+    right: 15%;
+    color: white;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.img4 {
+    grid-area: img4;
+    position: relative;
+
+}
+
+.img4:after {
+    content: 'Games';
+    display: grid;
+    position: absolute;
+    bottom: 45%;
+    right: 35%;
+    color: white;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.img5 {
+    grid-area: img5;
+    position: relative;
+
+
+}
+
+.img5:after {
+    content: 'Culture and Education';
+    display: grid;
+    position: absolute;
+    bottom: 45%;
+    right: 25%;
+    color: white;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.img6 {
+    grid-area: img6;
+    position: relative;
+
+}
+
+.img6:after {
+    content: 'Relaxtion';
+    display: grid;
+    position: absolute;
+    bottom: 45%;
+    right: 40%;
+    color: white;
+    padding: 15px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.img7 {
+    grid-area: img7;
+    position: relative;
+
+}
+
+.img7:after {
+    content: 'Travelling';
+    display: grid;
+    position: absolute;
+    bottom: 45%;
+    right: 25%;
+    color: white;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.email_ideas h2 {
+    text-align: center;
+}
+
+.email_ideas h3 {
+    font-weight: lighter;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.email_ideas {
+    /* display: grid;
+    /* grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-areas: ". email but_email ." */
+}
+
+.inp_email {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.email {
+    width: 240px;
+    height: 30px;
+    grid-area: email;
+    margin-right: 1%;
+}
+
+.but_email {
+    grid-area: but_email;
+}
+
+footer {
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+    border-top: 4px solid red;
+    display: grid;
+    grid-template-columns: 1fr 2fr 5% 5% 10% 7% 2.5fr 2fr 1fr;
+    grid-template-areas: ". footer_sitelogo . footer__collum . footer__collum_2 . img_footer_logo . "
+}
+
+.footer_sitelogo_text {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: 1.1em;
+
+}
+
+.footer__collum {
+
+    text-decoration: none;
+    grid-area: footer__collum;
+}
+
+.footer__collum__title {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.footer__collum__link {
+    padding-top: 5%;
+    display: block;
+    text-decoration: none;
+    color: #666666;
+}
+
+.footer_sitelogo {
+    text-decoration: none;
+    grid-area: footer_sitelogo;
+}
+
+.footer__collum__partner {
+    font-weight: bold;
+}
+
+.footer__collum_2 {
+    grid-area: footer__collum_2;
+}
+
+.img_footer_logo {
+    grid-area: img_footer_logo;
+}
+
+@media screen and (max-width:869px) {
+    header {
+        display: grid;
+        grid-template-columns: 15% 1fr 2% 1.5fr 2% 2fr 15%;
+        grid-template-areas: ". logo . . . nav ."
+            " . . . head_text . . ."
+            " . . . head_but . . . ";
+        grid-template-rows: 3fr 1fr 4fr
+    }
+
+    .works {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+        grid-template-areas: ". . text_works . ."
+            " . step1 step2 step3 .";
+        grid-gap: 1%;
+    }
+
+    .step1 img {
+        grid-area: step1;
+        height: 400px;
+        width: 260px;
+    }
+
+    .step2 img {
+        grid-area: step2;
+        height: 400px;
+        width: 260px;
+    }
+
+    .step3 img {
+        grid-area: step3;
+        height: 400px;
+        width: 260px;
+    }
+
+    .partner {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr 1fr 1fr 1fr 0.3fr;
+        grid-template-areas: ". . text_partner text_partner . . "
+            ". partner1 partner2 partner3 partner4 ."
+            ". . but_partner but_partner . .";
+    }
+
+    
+    .grid_photo img {
+        width: 100%;
+
+    }
+
+    .grid_photo {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
+        grid-template-areas: ". img1 img2 img3 ."
+            ". img4 img5 img5 ."
+            ". img6 img6 img7 .";
+        grid-gap: 1%;
+        grid-template-rows: 1fr 1fr 1.1fr;
+    }
+
+}
+
+@media screen and (max-width:802px) {
+    header {
+        display: grid;
+        grid-template-columns: 5% 0.3fr 4fr 5%;
+        grid-template-areas: ". logo  nav   ."
+            " . head_text  head_text   ."
+            " . head_but  head_but   . ";
+        grid-template-rows: 3fr 1fr 4fr;
+
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .works {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: ".  text_works ."
+            " . step1 . "
+            ". step2 ."
+            ". step3 .";
+
+    }
+
+    .works img {
+        height: 200px;
+        width: 100%;
+
+    }
+
+    .partner {
+        padding-top: 12%;
+        ;
+        display: grid;
+        grid-template-columns: 0.3fr 1fr 0.3fr;
+        grid-template-areas: ".  text_partner   . "
+            ". partner1 ."
+            ". partner2 ."
+            ". partner3 ."
+            ". partner4 ."
+            ".  but_partner   .";
+    }
+
+    .partner p {
+        padding-top: 2%;
+        padding-bottom: 2%;
+
+    }
+
+    .img1:after {
+        bottom: 40%;
+        right: 1%;
+        padding: 15px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .img2:after {
+        bottom: 40%;
+        right: 1%;
+        padding: 15px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .img3:after {
+        bottom: 40%;
+
+        right: 1%;
+        padding: 15px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+
+
+}
+
+@media screen and (max-width:650px) {
+    .img1:after {
+        bottom: 40%;
+        right: 1%;
+        padding: 15px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .img2:after {
+        bottom: 40%;
+        right: 1%;
+        padding: 15px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .img3:after {
+        bottom: 40%;
+
+        right: 1%;
+        padding: 15px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .img4:after {
+        bottom: 40%;
+
+        right: 20%;
+        padding: 15px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .img5:after {
+        bottom: 40%;
+
+        right: 15%;
+        padding: 15px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .img6:after {
+        bottom: 40%;
+
+        right: 28%;
+        padding: 15px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .img7:after {
+        bottom: 40%;
+
+        right: 15%;
+        padding: 15px;
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .img1:after {
+        bottom: 40%;
+        right: 1%;
+        padding: 15px;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .img2:after {
+        bottom: 40%;
+        right: 1%;
+        padding: 15px;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .img3:after {
+        bottom: 40%;
+
+        right: 1%;
+        padding: 15px;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .img4:after {
+        bottom: 40%;
+
+        right: 20%;
+        padding: 15px;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .img5:after {
+        bottom: 40%;
+
+        right: 15%;
+        padding: 15px;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .img6:after {
+        bottom: 40%;
+
+        right: 28%;
+        padding: 15px;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .img7:after {
+        bottom: 40%;
+
+        right: 15%;
+        padding: 15px;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    footer {
+
+        display: grid;
+        grid-template-columns: 0.3fr 0.5fr 2% 0.5fr 2% 0.5fr 2% 0.5fr 0.3fr;
+        grid-template-areas: ". footer_sitelogo . footer__collum . footer__collum_2 . img_footer_logo . "
+    }
+}
